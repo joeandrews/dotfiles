@@ -43,4 +43,4 @@ update_submodules
 symlink_files
 make_vim_tmp
 
-exec "vim -u #{File.expand_path('~/.vim/vundle.vim')} +BundleInstall +q +q; zsh"
+exec "mvim -u #{File.expand_path('~/.vim/vundle.vim')} +BundleInstall +q +q; zsh"

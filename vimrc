@@ -1,17 +1,7 @@
-"let mapleader = "\\"
-"call pathogen#infect()
 "color Tomorrow-Night
-"IndentGuidesEnable
-"let g:session_autoload = 'no'
-"let g:indent_guides_start_level = 2
-"let g:indent_guides_guide_size = 1
-"let g:ctrlp_working_path_mode = 2
-
-set nocompatible
 
 set t_Co=256
 let g:hybrid_use_Xresources = 1
-color hybrid
 
 source ~/.vim/vundle.vim
 source ~/.vim/plugin_config.vim
@@ -30,6 +20,8 @@ set expandtab
 
 " Disable that auto-commenting
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+color hybrid
 
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
@@ -99,4 +91,3 @@ vnoremap <tab> %
 " Stupid shift key fixes
 cmap W w
 
-set ofu=syntaxcomplete#Complete
