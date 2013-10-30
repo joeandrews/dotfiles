@@ -24,6 +24,7 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'darthdeus/vim-slim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-scripts/c.vim'
+Bundle 'tpope/vim-rails'
 
 Bundle 'gblock0/vim-chino'
 
