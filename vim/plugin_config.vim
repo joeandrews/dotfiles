@@ -38,9 +38,9 @@ nnoremap <D-/> :NERDComToggleComment<CR>
 " NerdTree
 """""""""""""""""""""""""""
 nnoremap <leader>n :NERDTreeToggle<CR>
-let NERDTreeHijackNetrw = 0
-autocmd vimenter * if !argc() | NERDTree | wincmd l | endif
-let NERDTreeIgnore=['^components/', '^node_modules/']
+"let NERDTreeHijackNetrw = 0
+"autocmd vimenter * if !argc() | NERDTree | wincmd l | endif
+"let NERDTreeIgnore=['^components/', '^node_modules/']
 
 """""""""""""""""""""""""""
 " Supertab
