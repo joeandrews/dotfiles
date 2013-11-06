@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="gb"
 bindkey -v
 
 plugins=(git osx ruby bundler brew)
@@ -65,4 +65,6 @@ alias 'zrr'="zeus rake routes"
 alias 'rr'='rake routes'
 alias 'rdl'='tail -f log/development.log'
 export WOMSTREET_EMAIL="gregblock@womstreet.com"
+
+function mkcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 [[ -s /Users/gregoryblock/.nvm/nvm.sh ]] && . /Users/gregoryblock/.nvm/nvm.sh # This loads NVM
