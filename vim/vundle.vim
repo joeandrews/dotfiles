@@ -16,16 +16,13 @@ Bundle 'nanotech/jellybeans.vim'
 Bundle 'w0ng/vim-hybrid'
 
 " Syntax Plugins
-Bundle 'pangloss/vim-javascript'
 Bundle 'wavded/vim-stylus'
 Bundle 'othree/html5.vim'
-Bundle 'uggedal/go-vim'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'darthdeus/vim-slim'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'vim-scripts/c.vim'
 Bundle 'tpope/vim-rails'
-Bundle 'othree/javascript-libraries-syntax.vim'
+Bundle 'jelera/vim-javascript-syntax'
 
 Bundle 'gblock0/vim-chino'
 
@@ -48,3 +45,13 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'The-NERD-Commenter'
+Bundle 'moll/vim-node'
+Bundle 'walm/jshint.vim'
+Bundle 'lfilho/cosco.vim'
+
+"Snipmate stuff
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+Bundle "gblock0/snipmate-nodejs"

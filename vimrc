@@ -18,10 +18,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-" Disable that auto-commenting
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
-color tomorrow-night
+color hybrid
 
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
@@ -91,3 +88,10 @@ vnoremap <tab> %
 " Stupid shift key fixes
 cmap W w
 
+"Snipmate Remaps
+imap jj <esc>a<Plug>snipMateNextOrTrigger
+smap jj <Plug>snipMateNextOrTrigger
+
+"Cosco Mappings
+autocmd FileType javascript,css,YOUR_LANG nmap <silent> ,; :call cosco#commaOrSemiColon()<CR>
+autocmd FileType javascript,css,YOUR_LANG inoremap <silent> ,; <ESC>:call cosco#commaOrSemiColon()"<CR>a
