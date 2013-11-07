@@ -21,7 +21,7 @@ set expandtab
 " Disable that auto-commenting
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-color hybrid
+color tomorrow-night
 
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
