@@ -48,6 +48,7 @@ Bundle 'The-NERD-Commenter'
 Bundle 'moll/vim-node'
 Bundle 'walm/jshint.vim'
 Bundle 'lfilho/cosco.vim'
+Bundle 'marijnh/tern_for_vim'
 
 "Snipmate stuff
 Bundle "MarcWeber/vim-addon-mw-utils"

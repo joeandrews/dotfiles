@@ -95,3 +95,11 @@ smap jj <Plug>snipMateNextOrTrigger
 "Cosco Mappings
 autocmd FileType javascript,css,YOUR_LANG nmap <silent> ,; :call cosco#commaOrSemiColon()<CR>
 autocmd FileType javascript,css,YOUR_LANG inoremap <silent> ,; <ESC>:call cosco#commaOrSemiColon()"<CR>a
+
+"Using Ctrl+c will make a new line for { }
+imap <C-c> <CR><Esc>O
+
+"YouCompleteMe Options
+let g:ycm_add_preview_to_completeopt=0
+let g:ycm_confirm_extra_conf=0
+set completeopt-=preview
