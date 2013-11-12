@@ -103,3 +103,17 @@ imap <C-c> <CR><Esc>O
 let g:ycm_add_preview_to_completeopt=0
 let g:ycm_confirm_extra_conf=0
 set completeopt-=preview
+
+" Configure switch custom definitions.
+let g:switch_custom_definitions=[
+\        ['on', 'off'],
+\        ['0', '1'],
+\        ['yes', 'no'],
+\        ['before', 'after'],
+\        ['visible', 'hidden'],
+\        ['block', 'none'],
+\        ['!important', '/*!important*/']
+\]
+
+" Switch commands.
+nmap <leader>s :Switch<CR>

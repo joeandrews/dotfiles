@@ -23,8 +23,8 @@ Bundle 'darthdeus/vim-slim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-rails'
 Bundle 'jelera/vim-javascript-syntax'
-
 Bundle 'gblock0/vim-chino'
+Bundle 'elzr/vim-json'
 
 " Utilities
 Bundle 'majutsushi/tagbar'
@@ -49,6 +49,7 @@ Bundle 'moll/vim-node'
 Bundle 'walm/jshint.vim'
 Bundle 'lfilho/cosco.vim'
 Bundle 'marijnh/tern_for_vim'
+Bundle 'AndrewRadev/switch.vim'
 
 "Snipmate stuff
 Bundle "MarcWeber/vim-addon-mw-utils"
