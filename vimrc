@@ -97,7 +97,7 @@ autocmd FileType javascript,css,YOUR_LANG nmap <silent> ,; :call cosco#commaOrSe
 autocmd FileType javascript,css,YOUR_LANG inoremap <silent> ,; <ESC>:call cosco#commaOrSemiColon()"<CR>a
 
 "Using Ctrl+c will make a new line for { }
-imap <C-c> <CR><Esc>O
+imap <C-c> <CR><Esc>==O
 
 "YouCompleteMe Options
 let g:ycm_add_preview_to_completeopt=0
