@@ -32,6 +32,8 @@ set number
 " wrap long lines
 set nowrap
 
+set hlsearch
+
 " Reload syntax highlighting
 nmap <leader>x :syn off | syn on
 
