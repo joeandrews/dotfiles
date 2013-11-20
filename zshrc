@@ -65,6 +65,7 @@ alias 'zrr'="zeus rake routes"
 alias 'rr'='rake routes'
 alias 'rdl'='tail -f log/development.log'
 export WOMSTREET_EMAIL="gregblock@womstreet.com"
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 function mkcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 [[ -s /Users/gregoryblock/.nvm/nvm.sh ]] && . /Users/gregoryblock/.nvm/nvm.sh # This loads NVM
