@@ -27,7 +27,7 @@ Bundle 'gblock0/vim-chino'
 Bundle 'elzr/vim-json'
 
 " Utilities
-Bundle 'majutsushi/tagbar'
+"Bundle 'majutsushi/tagbar'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'gregsexton/MatchTag'

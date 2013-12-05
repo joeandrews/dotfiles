@@ -10,10 +10,10 @@ source ~/.vim/filetype_settings.vim
 set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 
 "set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-python import sys; sys.path.append("/usr/local/lib/python2.7/site-packages")
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+"python import sys; sys.path.append("/usr/local/lib/python2.7/site-packages")
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup
 
 
 " Store Temp Files Elsewhere
@@ -25,7 +25,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-color hybrid
+color Tomorrow-Night
 
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
@@ -125,4 +125,4 @@ let g:switch_custom_definitions=[
 \]
 
 " Switch commands.
-nmap <leader>s :Switch<CR>
+nmap <leader>- :Switch<CR>
