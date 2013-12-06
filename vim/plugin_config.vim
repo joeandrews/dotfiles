@@ -2,9 +2,9 @@
 " Ctags
 """""""""""""""""""""""""""
 nnoremap <leader>c :TagbarToggle<CR>
-let g:tagbar_type_javascript = {
-    \ 'ctagsbin' : '/usr/local/share/npm/bin/jsctags'
-\ }
+"let g:tagbar_type_javascript = {
+    "\ 'ctagsbin' : '/usr/local/share/npm/bin/jsctags'
+"\ }
 
 """""""""""""""""""""""""""
 " Ctrl-P
@@ -52,3 +52,13 @@ set ofu=syntaxcomplete#Complete
 " PowerLine
 """""""""""""""""""""""""""
 let g:Powerline_symbols = 'fancy'
+
+if isdirectory("/usr/local/lib/python2.7/site-packages/powerline/bindings/vim/")
+  python import sys; sys.path.append("/usr/local/lib/python2.7/site-packages")
+  python from powerline.vim import setup as powerline_setup
+  python powerline_setup()
+  python del powerline_setup
+endif
+
+set laststatus=2 " Always display the statusline in all windows
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)

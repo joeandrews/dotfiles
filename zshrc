@@ -38,10 +38,7 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
-export PATH=/Users/gregoryblock/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/bin:/Users/gregoryblock/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/gregoryblock/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/gregoryblock/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Users/gregoryblock/bin
-export PATH=$PATH:/opt/local/bin
-export MANPATH=$MANPATH:/opt/local/share/man
-export INFOPATH=$INFOPATH:/opt/local/share/info
+export PATH=/Users/gregoryblock/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/bin:/Users/gregoryblock/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/gregoryblock/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/gregoryblock/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/X11/bin:/usr/local/git/bin:/Users/gregoryblock/bin
 
 alias "guard"="bundle exec guard"
 alias "cl"="clear"
