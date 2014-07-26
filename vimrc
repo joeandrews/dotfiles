@@ -17,7 +17,6 @@ set directory=~/.vim-tmp
 set smartindent
 set tabstop=2
 set shiftwidth=2
-set expandtab
 
 color Tomorrow-Night
 

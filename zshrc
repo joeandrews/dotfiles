@@ -61,6 +61,8 @@ alias 'zc'='zeus c'
 alias 'zrr'="zeus rake routes"
 alias 'rr'='rake routes'
 alias 'rdl'='tail -f log/development.log'
+alias 'hg'='git'
+
 export WOMSTREET_EMAIL="gregblock@womstreet.com"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
