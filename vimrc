@@ -3,7 +3,8 @@
 set t_Co=256
 let g:hybrid_use_Xresources = 1
 
-source ~/.vim/vundle.vim
+"source ~/.vim/vundle.vim
+source ~/.vim/plug_settings.vim
 source ~/.vim/plugin_config.vim
 source ~/.vim/filetype_settings.vim
 
@@ -24,8 +25,8 @@ let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
-filetype plugin indent on
-syntax on
+"filetype plugin indent on
+"syntax on
 
 set number
 
