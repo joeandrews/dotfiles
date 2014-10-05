@@ -43,6 +43,7 @@ Plug 'walm/jshint.vim'
 Plug 'lfilho/cosco.vim'
 Plug 'marijnh/tern_for_vim'
 Plug 'AndrewRadev/switch.vim'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 
 "Snipmate stuff
 Plug 'MarcWeber/vim-addon-mw-utils'

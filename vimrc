@@ -25,6 +25,8 @@ let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
+au BufNewFile,BufRead *.ejs set filetype=html
+
 "filetype plugin indent on
 "syntax on
 
