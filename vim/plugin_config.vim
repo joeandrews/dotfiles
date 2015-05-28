@@ -1,4 +1,14 @@
 """""""""""""""""""""""""""
+" PowerLine
+"""""""""""""""""""""""""""
+if isdirectory("/usr/local/lib/python2.7/site-packages/powerline/bindings/vim/")
+  python import sys; sys.path.append("/usr/local/lib/python2.7/site-packages")
+  python from powerline.vim import setup as powerline_setup
+  python powerline_setup()
+  python del powerline_setup
+endif
+
+"""""""""""""""""""""""""""
 " Ctags
 """""""""""""""""""""""""""
 nnoremap <leader>c :TagbarToggle<CR>
@@ -9,7 +19,7 @@ nnoremap <leader>c :TagbarToggle<CR>
 """""""""""""""""""""""""""
 " Ctrl-P
 """""""""""""""""""""""""""
-if has("gui_macvim")
+if has("gui_running")
   macmenu &File.New\ Tab key=<D-S-t>
 endif
 
@@ -48,17 +58,6 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 let g:SuperTabDefaultCompletionType = "context"
 set ofu=syntaxcomplete#Complete
 
-"""""""""""""""""""""""""""
-" PowerLine
-"""""""""""""""""""""""""""
-let g:Powerline_symbols = 'fancy'
-
-if isdirectory("/usr/local/lib/python2.7/site-packages/powerline/bindings/vim/")
-  python import sys; sys.path.append("/usr/local/lib/python2.7/site-packages")
-  python from powerline.vim import setup as powerline_setup
-  python powerline_setup()
-  python del powerline_setup
-endif
 
 set laststatus=2 " Always display the statusline in all windows
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)

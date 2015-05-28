@@ -9,26 +9,28 @@ source ~/.vim/filetype_settings.vim
 
 set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 
+set lazyredraw
 
 " Store Temp Files Elsewhere
 set backupdir=~/.vim-tmp
 set directory=~/.vim-tmp
 
+" Indent Stuff
 set smartindent
 set tabstop=2
 set shiftwidth=2
 
+" Color Scheme Settings
 color Tomorrow-Night
 
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
-au BufNewFile,BufRead *.ejs set filetype=html
+filetype plugin indent on
+syntax on
 
-"filetype plugin indent on
-"syntax on
-
+" Line Numbers
 set number
 
 " wrap long lines
@@ -59,10 +61,12 @@ vnoremap <F1> <ESC>
 "If focus is lost on vim then save file
 au FocusLost * :wa
 
+" Hide autocomplete on cursor move
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
 "strip all trailing whitespace in the current file
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
-
-nnoremap <leader>a :Ack 
 
 "Reselect the text that was just pasted
 nnoremap <leader>v V`]
@@ -92,10 +96,6 @@ vnoremap <tab> %
 " Stupid shift key fixes
 cmap W w
 
-"Snipmate Remaps
-imap jj <esc>a<Plug>snipMateNextOrTrigger
-smap jj <Plug>snipMateNextOrTrigger
-
 "Cosco Mappings
 autocmd FileType javascript,css,YOUR_LANG nmap <silent> ,; :call cosco#commaOrSemiColon()<CR>
 autocmd FileType javascript,css,YOUR_LANG inoremap <silent> ,; <ESC>:call cosco#commaOrSemiColon()"<CR>a
@@ -104,9 +104,9 @@ autocmd FileType javascript,css,YOUR_LANG inoremap <silent> ,; <ESC>:call cosco#
 imap <C-c> <CR><Esc>==O
 
 "YouCompleteMe Options
-let g:ycm_add_preview_to_completeopt=0
-let g:ycm_confirm_extra_conf=0
-set completeopt-=preview
+"let g:ycm_add_preview_to_completeopt=0
+"let g:ycm_confirm_extra_conf=0
+"set completeopt-=preview
 
 " Configure switch custom definitions.
 let g:switch_custom_definitions=[
