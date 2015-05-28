@@ -31,6 +31,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'moll/vim-node'
 Plug 'walm/jshint.vim'
 Plug 'lfilho/cosco.vim'
+Plug 'airblade/vim-gitgutter'
 "Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 "Plug 'majutsushi/tagbar'
 

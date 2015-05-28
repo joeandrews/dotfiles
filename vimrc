@@ -20,6 +20,9 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 
+"Hide Scrollbar
+set guioptions-=r
+
 " Color Scheme Settings
 color Tomorrow-Night
 
