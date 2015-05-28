@@ -17,7 +17,7 @@ plugins=(git osx ruby bundler brew)
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
- DISABLE_AUTO_UPDATE="true" 
+ DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
@@ -38,7 +38,10 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
-export PATH=/Users/gregoryblock/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/bin:/Users/gregoryblock/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/gregoryblock/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/gregoryblock/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/X11/bin:/usr/local/git/bin:/Users/gregoryblock/bin
+
+export PATH="/Users/gregoryblock/.rvm/gems/ruby-2.1.5@global/bin:/Users/gregoryblock/.rvm/rubies/ruby-2.1.5/bin:/Users/gregoryblock/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/X11/bin:/usr/local/git/bin:/Users/gregoryblock/bin:/Users/gregoryblock/.nvm/versions/node:/usr/local/share/npm/bin:$PATH"
+
+export API_URL=$(ipconfig getifaddr en0)
 
 alias "guard"="bundle exec guard"
 alias "cl"="clear"
@@ -55,7 +58,7 @@ alias 'gum'='git fetch upstream; git merge upstream/master'
 alias 'zrmt'='zeus rake db:migrate; zeus rake db:test:prepare'
 alias 'rmt'='rake db:migrate; rake db:test:prepare'
 alias 'g'="git"
-alias 'ga'='git add -A .'
+alias 'ga'='git add --all'
 alias 'st'="status"
 alias 'zc'='zeus c'
 alias 'zrr'="zeus rake routes"
@@ -64,9 +67,17 @@ alias 'rdl'='tail -f log/development.log'
 alias 'rake'='bin/rake'
 alias 'spring st'='spring status'
 alias 'spring start'="rake routes; spring status"
+alias 'hg'='git'
+alias 'subl'='sublime'
+alias 'gsubup'='git submodule update --recursive'
+alias 'disd'='sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.discoveryd.plist;sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.discoveryd.plist;'
+alias 'rbuild'='cd ~/radish/build'
+alias 'rweb'='cd ~/radish/website'
+alias 'rmobile'='cd ~/radish/mobile'
+alias 'rback'='cd ~/radish/backend'
+alias 'rapp'='cd ~/radish/app'
 
-export WOMSTREET_EMAIL="gregblock@womstreet.com"
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 function mkcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
 [[ -s /Users/gregoryblock/.nvm/nvm.sh ]] && . /Users/gregoryblock/.nvm/nvm.sh # This loads NVM
