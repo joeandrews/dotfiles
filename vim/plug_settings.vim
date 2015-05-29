@@ -14,7 +14,7 @@ Plug 'ap/vim-css-color'
 
 " Utilities
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'kien/rainbow_parentheses.vim'
+Plug 'luochen1990/rainbow'
 Plug 'gregsexton/MatchTag'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-fugitive'
