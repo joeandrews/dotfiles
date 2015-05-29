@@ -36,6 +36,9 @@ syntax on
 " Line Numbers
 set number
 
+" Set for autoswap_mac
+set title titlestring=
+
 " wrap long lines
 set nowrap
 

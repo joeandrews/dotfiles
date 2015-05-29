@@ -32,6 +32,8 @@ Plug 'moll/vim-node'
 Plug 'walm/jshint.vim'
 Plug 'lfilho/cosco.vim'
 Plug 'airblade/vim-gitgutter'
+"Plug '~/autoswap_mac'
+Plug 'shinokada/autoswap_mac'
 "Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 "Plug 'majutsushi/tagbar'
 
