@@ -34,6 +34,7 @@ Plug 'lfilho/cosco.vim'
 Plug 'airblade/vim-gitgutter'
 "Plug '~/autoswap_mac'
 Plug 'shinokada/autoswap_mac'
+Plug 'lambdalisue/vim-fullscreen'
 "Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 "Plug 'majutsushi/tagbar'
 
@@ -42,6 +43,6 @@ Plug 'othree/yajs.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'rschmukler/pangloss-vim-indent'
 Plug 'vim-scripts/SyntaxComplete'
-Plug 'marijnh/tern_for_vim'
+Plug 'marijnh/tern_for_vim', { 'do' : 'npm install' }
 
 call plug#end()
