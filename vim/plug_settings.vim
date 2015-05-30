@@ -33,7 +33,8 @@ Plug 'lfilho/cosco.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'shinokada/autoswap_mac'
 Plug 'lambdalisue/vim-fullscreen'
-"Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'pangloss/vim-javascript'
+Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh' }
 "Plug 'majutsushi/tagbar'
 
 " Js plugins...
