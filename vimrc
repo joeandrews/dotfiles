@@ -56,7 +56,16 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+"disable arrow keys in normal mode
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
 
+" Disable auto-commenting
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+"Insert 'binding.remote_pry'
 inoremap <leader>p "binding.remote_pry"
 
 "Disable help F1 key
@@ -77,11 +86,11 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 "Reselect the text that was just pasted
 nnoremap <leader>v V`]
 
-"create a new vsplit and switch to it
-nnoremap <leader>w <C-w>v<C-w>l
+"create a new vsplit, switch to it and open CtrlP
+nnoremap <leader>w <C-w>v<C-w>l :CtrlP<CR>
 
-"create a new split and switch to it
-nnoremap <leader>s <C-w>s<C-w>j
+"create a new split, switch to it and open CtrlP
+nnoremap <leader>s <C-w>s<C-w>j :CtrlP<CR>
 
 "Change window movement commands
 nnoremap <C-h> <C-w>h
