@@ -14,7 +14,6 @@ Plug 'ap/vim-css-color'
 
 " Utilities
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'luochen1990/rainbow'
 Plug 'gregsexton/MatchTag'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-fugitive'
@@ -32,7 +31,6 @@ Plug 'moll/vim-node'
 Plug 'walm/jshint.vim'
 Plug 'lfilho/cosco.vim'
 Plug 'airblade/vim-gitgutter'
-"Plug '~/autoswap_mac'
 Plug 'shinokada/autoswap_mac'
 Plug 'lambdalisue/vim-fullscreen'
 "Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
