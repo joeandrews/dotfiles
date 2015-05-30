@@ -65,3 +65,28 @@ set ofu=syntaxcomplete#Complete
 set laststatus=2 " Always display the statusline in all windows
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
+"""""""""""""""""""""""""""
+" Javascript plugins
+"""""""""""""""""""""""""""
+
+let g:used_javascript_libs = 'angularjs,jquery'
+
+"""""""""""""""""""""""""""
+" Syntastic
+"""""""""""""""""""""""""""
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_html_checkers = []
+let g:syntastic_javascript_checkers = ['eslint']
+nnoremap <Leader>{ :lprev<CR>
+nnoremap <Leader>} :lnext<CR>
+
+
+""""""""""""""""""""
+"  SyntaxComplete
+""""""""""""""""""""
+ if has("autocmd") && exists("+omnifunc")
+	autocmd Filetype *
+    \	if &omnifunc == "" |
+    \		setlocal omnifunc=syntaxcomplete#Complete |
+    \	endif
+endif
