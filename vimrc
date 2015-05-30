@@ -2,7 +2,6 @@ set term=screen-256color
 set t_Co=256
 let g:hybrid_use_Xresources = 1
 
-"source ~/.vim/vundle.vim
 source ~/.vim/plug_settings.vim
 source ~/.vim/plugin_config.vim
 source ~/.vim/filetype_settings.vim
@@ -20,7 +19,7 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 
-"Hide Scrollbar
+" Hide Scrollbar
 set guioptions-=r
 
 " Color Scheme Settings
@@ -39,7 +38,7 @@ set number
 " Set for autoswap_mac
 set title titlestring=
 
-" wrap long lines
+" Wrap long lines
 set nowrap
 
 set hlsearch
@@ -47,16 +46,16 @@ set hlsearch
 " Reload syntax highlighting
 nmap <leader>x :syn off | syn on
 
-"Turn off highlighting
-nnoremap <leader><space> :noh<cr>
+" Turn off highlighting
+nnoremap <leader><space> :noh<CR> :match none<CR>
 
-"disable arrow keys in insert mode
+" Disable arrow keys in insert mode
 inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
-"disable arrow keys in normal mode
+" Disable arrow keys in normal mode
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -65,41 +64,41 @@ nnoremap <right> <nop>
 " Disable auto-commenting
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-"Insert 'binding.remote_pry'
+" Insert 'binding.remote_pry'
 inoremap <leader>p "binding.remote_pry"
 
-"Disable help F1 key
+" Disable help F1 key
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-"If focus is lost on vim then save file
+" If focus is lost on vim then save file
 au FocusLost * :wa
 
 " Hide autocomplete on cursor move
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-"strip all trailing whitespace in the current file
+" Strip all trailing whitespace in the current file
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
-"Reselect the text that was just pasted
+" Reselect the text that was just pasted
 nnoremap <leader>v V`]
 
-"create a new vsplit, switch to it and open CtrlP
+" Create a new vsplit, switch to it and open CtrlP
 nnoremap <leader>w <C-w>v<C-w>l :CtrlP<CR>
 
-"create a new split, switch to it and open CtrlP
+" Create a new split, switch to it and open CtrlP
 nnoremap <leader>s <C-w>s<C-w>j :CtrlP<CR>
 
-"Change window movement commands
+" Change window movement commands
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 
-"Tab key matches bracket pairs
+" Tab key matches bracket pairs
 nnoremap <tab> %
 vnoremap <tab> %
 
@@ -110,7 +109,7 @@ cmap W w
 autocmd FileType javascript,css,YOUR_LANG nmap <silent> ,; :call cosco#commaOrSemiColon()<CR>
 autocmd FileType javascript,css,YOUR_LANG inoremap <silent> ,; <ESC>:call cosco#commaOrSemiColon()"<CR>a
 
-"Using Ctrl+c will make a new line for { }
+" Using Ctrl+c will make a new line for { }
 imap <C-c> <CR><Esc>==O
 
 "YouCompleteMe Options
@@ -131,3 +130,7 @@ let g:switch_custom_definitions=[
 
 " Switch commands.
 nmap <leader>- :Switch<CR>
+
+" Match word that is under cursor
+nnoremap <leader>ma :exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))<CR>
+
