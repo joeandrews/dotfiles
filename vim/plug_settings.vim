@@ -8,7 +8,6 @@ Plug 'w0ng/vim-hybrid'
 
 " Syntax Plugins
 Plug 'othree/html5.vim'
-Plug 'jelera/vim-javascript-syntax'
 Plug 'elzr/vim-json'
 Plug 'ap/vim-css-color'
 
