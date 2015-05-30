@@ -12,9 +12,9 @@ endif
 " Ctags
 """""""""""""""""""""""""""
 nnoremap <leader>c :TagbarToggle<CR>
-"let g:tagbar_type_javascript = {
-    "\ 'ctagsbin' : '/usr/local/share/npm/bin/jsctags'
-"\ }
+let g:tagbar_type_javascript = {
+	\ 'ctagsbin' : '/usr/local/share/npm/bin/jsctags'
+\ }
 
 """""""""""""""""""""""""""
 " Ctrl-P
@@ -68,7 +68,6 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 """""""""""""""""""""""""""
 " Javascript plugins
 """""""""""""""""""""""""""
-
 let g:used_javascript_libs = 'angularjs,jquery'
 
 """""""""""""""""""""""""""
@@ -90,3 +89,11 @@ nnoremap <Leader>} :lnext<CR>
     \		setlocal omnifunc=syntaxcomplete#Complete |
     \	endif
 endif
+
+
+""""""""""""""""""""
+"  IncSearch
+""""""""""""""""""""
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)

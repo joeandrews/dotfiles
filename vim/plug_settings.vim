@@ -34,6 +34,7 @@ Plug 'shinokada/autoswap_mac'
 Plug 'lambdalisue/vim-fullscreen'
 Plug 'pangloss/vim-javascript'
 Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh' }
+Plug 'haya14busa/incsearch.vim'
 "Plug 'majutsushi/tagbar'
 
 " Js plugins...
