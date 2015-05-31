@@ -68,7 +68,7 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 """""""""""""""""""""""""""
 " Javascript plugins
 """""""""""""""""""""""""""
-let g:used_javascript_libs = 'angularjs,jquery'
+let g:used_javascript_libs = 'angularjs,jquery,jasmine'
 
 """""""""""""""""""""""""""
 " Syntastic
