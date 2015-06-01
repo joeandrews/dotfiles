@@ -32,7 +32,7 @@ def make_vim_tmp
 end
 
 def update_submodules
-  submodules = ['oh-my-zsh', 'vim/bundle/vundle']
+  submodules = ['oh-my-zsh']
   submodules.each do |s|
     `git submodule init #{s}`
     `git submodule update #{s}`
