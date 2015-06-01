@@ -51,7 +51,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 
 "Show hidden files in NERDTree (files that start with period)
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['^components/', 'node_modules/']
+let NERDTreeIgnore=['^components/', '^node_modules/', '\.DS_Store$']
 "let NERDTreeHijackNetrw = 0
 "autocmd vimenter * if !argc() | NERDTree | wincmd l | endif
 
