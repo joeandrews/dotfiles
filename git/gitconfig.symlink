@@ -1,9 +1,9 @@
 # gitconfig
 [user]
-    name = Nick Nisi
-    email = nick@nisi.org
+    name = Greg Block
+    email = gblock0@gmail.com
 [github]
-    user = nicknisi
+    user = gblock0
 [init]
     templatedir = ~/.dotfiles/git/templates
 [alias]
@@ -15,7 +15,7 @@
     co = checkout
     cob = checkout -b
     s = status --short
-    ss  = status
+    st  = status
     br = branch -v
 
     l = log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
@@ -39,9 +39,6 @@
     su = submodule update
     sub = "!git submodule sync && git submodule update"
 
-    # show number of commits per contributer, sorted
-    count = shortlog -sn
-
     undo = reset --soft HEAD~1
     amend = commit -a --amend
 
@@ -53,12 +50,6 @@
     # tag aliases
     # show the last tag
     lt = describe --tags --abbrev=0
-
-    # assume aliases
-    assume = update-index --assume-unchanged
-    unassume = update-index --no-assume-unchanged
-    assumed = "!git ls-files -v | grep ^h | cut -c 3-"
-    unassumeall = "!git assumed | xargs git update-index --no-assume-unchanged"
 
     # grep commands
 
@@ -76,8 +67,8 @@
     rg = "!sh -c 'git ls-files --others --exclude-standard | grep $1 | xargs rm' -"
 
     # Kaleidoscope commands
-    dkal = difftool -y -t Kaleidoscope
-    remotes = remote -v
+    #dkal = difftool -y -t Kaleidoscope
+    #remotes = remote -v
 [color]
     diff = auto
     status = auto
@@ -126,8 +117,8 @@
     lineNumber = true
 [credential]
 	helper = osxkeychain
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
+#[difftool "Kaleidoscope"]
+#	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+#[mergetool "Kaleidoscope"]
+#	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+#	trustexitcode = true
