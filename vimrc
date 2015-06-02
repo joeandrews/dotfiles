@@ -134,3 +134,15 @@ nmap <leader>- :Switch<CR>
 " Match word that is under cursor
 nnoremap <leader>ma :exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))<CR>
 
+" toggle invisible characters
+" set invlist
+set listchars=tab:▸\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
+highlight SpecialKey ctermbg=none " make the highlighting of tabs less annoying
+set showbreak=↪
+nmap <leader>l :set list!<cr>
+
+"set clipboard to be system clipboard
+set clipboard=unnamed
+
+" faster redrawing
+set ttyfast

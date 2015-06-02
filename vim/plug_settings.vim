@@ -20,7 +20,6 @@ Plug 'scrooloose/syntastic'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-scripts/Align'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'tpope/vim-surround'
 Plug 'powerline/powerline'
 Plug 'kien/ctrlp.vim'
@@ -35,6 +34,7 @@ Plug 'lambdalisue/vim-fullscreen'
 Plug 'pangloss/vim-javascript'
 Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh' }
 Plug 'haya14busa/incsearch.vim'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 "Plug 'majutsushi/tagbar'
 
 " Js plugins...
