@@ -135,7 +135,6 @@ nmap <leader>- :Switch<CR>
 nnoremap <leader>ma :exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))<CR>
 
 " toggle invisible characters
-" set invlist
 set listchars=tab:▸\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
 highlight SpecialKey ctermbg=none " make the highlighting of tabs less annoying
 set showbreak=↪
