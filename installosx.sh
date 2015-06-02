@@ -1,18 +1,18 @@
 #!/usr/bin/env sh
 
-# echo "Finder: show all filename extensions"
+echo "Finder: show all filename extensions"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-# echo "show hidden files by default"
+echo "show hidden files by default"
 defaults write com.apple.Finder AppleShowAllFiles -bool false
 
-# echo "only use UTF-8 in Terminal.app"
+echo "only use UTF-8 in Terminal.app"
 defaults write com.apple.terminal StringEncodings -array 4
 
-# echo "expand save dialog by default"
+echo "expand save dialog by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
-# echo "show the ~/Library folder in Finder"
+echo "show the ~/Library folder in Finder"
 chflags nohidden ~/Library
 
 # echo "disable resume system wide"
@@ -27,8 +27,8 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 # echo "Enable the 2D Dock"
 # defaults write com.apple.dock no-glass -bool true
 
-# Automatically hide and show the Dock
-# defaults write com.apple.dock autohide -bool true
+echo "Automatically hide and show the Dock"
+defaults write com.apple.dock autohide -bool true
 
 # echo "Make Dock icons of hidden applications translucent"
 # defaults write com.apple.dock showhidden -bool true
@@ -36,8 +36,8 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 #echo "Enable iTunes track notifications in the Dock"
 #defaults write com.apple.dock itunes-notifications -bool true
 
-# Disable menu bar transparency
-#defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+echo "Disable menu bar transparency"
+defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
 # Show remaining battery time; hide percentage
 # defaults write com.apple.menuextra.battery ShowPercent -string "NO"
@@ -117,8 +117,8 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 # Increase window resize speed for Cocoa applications
 # defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
-# echo "Avoid creating .DS_Store files on network volumes"
-# defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+echo "Avoid creating .DS_Store files on network volumes"
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # echo "Disable the warning when changing a file extension"
 # defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
@@ -126,8 +126,8 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 # echo "Show item info below desktop icons"
 # /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
 
-# echo "Enable snap-to-grid for desktop icons"
-# /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+echo "Enable snap-to-grid for desktop icons"
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
 # echo "Disable the warning before emptying the Trash"
 # defaults write com.apple.finder WarnOnEmptyTrash -bool false
@@ -135,9 +135,9 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 # Empty Trash securely by default
 # defaults write com.apple.finder EmptyTrashSecurely -bool true
 
-#echo "Require password immediately after sleep or screen saver begins"
-#defaults write com.apple.screensaver askForPassword -int 1
-#defaults write com.apple.screensaver askForPasswordDelay -int 0
+echo "Require password immediately after sleep or screen saver begins"
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 echo "Enable tap to click (Trackpad)"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -158,8 +158,8 @@ defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 # Remove useless icons from Safari’s bookmarks bar
 # defaults write com.apple.Safari ProxiesInBookmarksBar "()"
 
-# echo "Add a context menu item for showing the Web Inspector in web views"
-# defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+echo "Add a context menu item for showing the Web Inspector in web views"
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 #echo "Only use UTF-8 in Terminal.app"
 #defaults write com.apple.terminal StringEncodings -array 4

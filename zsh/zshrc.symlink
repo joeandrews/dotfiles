@@ -1,14 +1,10 @@
 export DOTFILES=$HOME/.dotfiles
 export ZSH=$DOTFILES/zsh
 
-# define the code directory
-if [[ -d ~/code ]]; then
-    export CODE_DIR=~/code
-fi
-
 # load all zsh config files
 for config ($ZSH/**/*.zsh) source $config
 
+# TODO: Need to set this up
 if [[ -a ~/.localrc ]]; then
     source ~/.localrc
 fi
@@ -17,8 +13,6 @@ fi
 # initialize autocomplete
 autoload -U compinit
 compinit
-
-for config ($ZSH/**/*completion.sh) source $config
 
 export EDITOR='vim'
 
@@ -38,16 +32,6 @@ if [[ -d ~/bin ]]; then
 fi
 
 [ -z "$TMUX" ] && export TERM=xterm-256color
-
-# install rbenv
-if hash rbenv 2>/dev/null; then
-    eval "$(rbenv init -)"
-fi
-
-if [[ -d ~/.rvm ]]; then
-    PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
-    source ~/.rvm/scripts/rvm
-fi
 
 # alias git to hub
 if hash hub 2>/dev/null; then

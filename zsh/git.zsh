@@ -1,5 +1,8 @@
 # git aliases
+alias g='git'
+alias hg='git' # Habits from my mercurial days
 alias ga='git add'
+alias gaa='git add --all'
 alias gb='git branch'
 alias gl='git pull'
 alias gp='git push'
@@ -11,6 +14,7 @@ alias gsp='git stash pop'
 alias gmv='git mv'
 alias grm='git rm'
 alias grn='git-rename'
+alias gsubup="git submodule update --recursive"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 
 # alias git-amend='git commit --amend -C HEAD'

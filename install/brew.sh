@@ -8,6 +8,7 @@ brew install wget
 
 # development tools
 brew install git
+brew install hub
 brew install macvim --override-system-vim
 brew install reattach-to-user-namespace
 brew install tmux

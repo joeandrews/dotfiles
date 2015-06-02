@@ -1,5 +1,5 @@
 # reload zsh config
-alias reload!='source ~/.zshrc'
+alias reload!="source ~/.zshrc"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -9,8 +9,8 @@ else # OS X `ls`
 fi
 
 # Filesystem aliases
-alias ..='cd ..'
-alias ...='cd ../..'
+alias ..="cd .."
+alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
@@ -21,44 +21,12 @@ alias lld="ls -l | grep ^d"
 alias rmf="rm -rf"
 
 # Helpers
-alias grep='grep --color=auto'
-alias df='df -h' # disk free, in Gigabytes, not bytes
-alias du='du -h -c' # calculate disk usage for a folder
-
-# rake fix
-alias rake="noglob rake"
-
-# Applications
-alias mou='open -a Mou.app'
-alias mark='open -a Marked.app'
-alias ios='open -a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
-
-# IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
-alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
-
-# Enhanced WHOIS lookups
-alias whois="whois -h whois-servers.net"
-
-# Flush Directory Service cache
-alias flush="dscacheutil -flushcache"
-
-# View HTTP traffic
-alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
-alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
-
-# Trim new lines and copy to clipboard
-alias trimcopy="tr -d '\n' | pbcopy"
+alias grep="grep --color=auto"
+alias df="df -h" # disk free, in Gigabytes, not bytes
+alias du="du -h -c" # calculate disk usage for a folder
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
-
-# File size
-alias fs="stat -f \"%z bytes\""
-
-# ROT13-encode text. Works for decoding, too! ;)
-alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
@@ -79,3 +47,10 @@ alias pumpitup="osascript -e 'set volume 10'"
 # Kill all the tabs in Chrome to free up memory
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
+alias cl="clear"
+alias md5="md5 -r"
+alias md5sum="md5 -r"
+alias rdl="tail -f log/development.log"
+alias subl="sublime"
+alias gsubup="git submodule update --recursive"
