@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
+export DOTFILES=$HOME/.dotfiles
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -39,7 +40,12 @@ unsetopt correct_all
 
 # Customize to your needs...
 
-export PATH="/Users/gregoryblock/.rvm/gems/ruby-2.1.5@global/bin:/Users/gregoryblock/.rvm/rubies/ruby-2.1.5/bin:/Users/gregoryblock/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/X11/bin:/usr/local/git/bin:/Users/gregoryblock/bin:/Users/gregoryblock/.nvm/versions/node:/usr/local/share/npm/bin:$PATH"
+# adding path directory for custom scripts
+export PATH=$DOTFILES/bin:$PATH
+
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/X11/bin:/usr/local/git/bin:/Users/gregoryblock/bin:/Users/gregoryblock/.nvm/versions/node:/usr/local/share/npm/bin:$PATH"
+
+[ -z "$TMUX" ] && export TERM=xterm-256color
 
 export API_URL=$(ipconfig getifaddr en0)
 
