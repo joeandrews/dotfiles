@@ -2,8 +2,6 @@
 
 Dotfiles idea taken from [Nick Nisi](http://www.github.com/nicknisi). 
 
-***Note:*** This is not my stable configuration. Check out my stable dotfiles config [here](https://github.com/gblock0/dotfiles).
-
 ## Contents
 
 + zsh configuration
