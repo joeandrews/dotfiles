@@ -27,3 +27,5 @@ fi
 
 echo "configuring zsh as default shell"
 chsh -s $(which zsh)
+
+vim -c "PlugInstall"

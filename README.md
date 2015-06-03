@@ -19,6 +19,7 @@ Dotfiles idea taken from [Nick Nisi](http://www.github.com/nicknisi).
 1. `git clone https://github.com/gblock0/dotfiles_unstable.git ~/.dotfiles`
 1. `cd ~/.dotfiles`
 1. `./install.sh`
+1. Install [powerline fonts](https://github.com/powerline/fonts)
 
 ## ZSH Plugins
 
