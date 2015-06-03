@@ -19,10 +19,6 @@ let g:tagbar_type_javascript = {
 """""""""""""""""""""""""""
 " Ctrl-P
 """""""""""""""""""""""""""
-if has("gui_running")
-  macmenu &File.New\ Tab key=<D-S-t>
-endif
-
 set wildignore=*.class,*.o,*~,*.pyc,.git,node_modules,lib-cov,public
 
 let g:ctrlp_working_path_mode = 2

@@ -1,6 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
-" Themes:
+"Themes
 Plug 'chriskempson/base16-vim'
 Plug 'Lokaltog/vim-distinguished'
 Plug 'nanotech/jellybeans.vim'
@@ -36,7 +36,6 @@ Plug 'Valloric/YouCompleteMe', { 'do' : './install.sh' }
 Plug 'haya14busa/incsearch.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mileszs/ack.vim'
-"Plug 'majutsushi/tagbar'
 
 " Js plugins...
 Plug 'othree/yajs.vim'
