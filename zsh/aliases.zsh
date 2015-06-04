@@ -53,3 +53,5 @@ alias md5="md5 -r"
 alias md5sum="md5 -r"
 alias rdl="tail -f log/development.log"
 alias subl="sublime"
+
+alias dotfiles="cd ~/.dotfiles"
