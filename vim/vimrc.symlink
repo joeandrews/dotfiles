@@ -235,10 +235,10 @@ vnoremap . :normal .<cr>
 " Stupid shift key fixes
 cmap W w
 
-map <silent> <C-h> :call WinMove('h')<cr>
-map <silent> <C-j> :call WinMove('j')<cr>
-map <silent> <C-k> :call WinMove('k')<cr>
-map <silent> <C-l> :call WinMove('l')<cr>
+map <silent> <C-h> :call MovePane('h')<cr>
+map <silent> <C-j> :call MovePane('j')<cr>
+map <silent> <C-k> :call MovePane('k')<cr>
+map <silent> <C-l> :call MovePane('l')<cr>
 
 " toggle cursor line
 nnoremap <leader>i :set cursorline!<cr>
@@ -246,12 +246,6 @@ nnoremap <leader>i :set cursorline!<cr>
 " scroll the viewport faster
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
-
-" moving up and down work as you would expect
-nnoremap <silent> j gj
-nnoremap <silent> k gk
-nnoremap <silent> ^ g^
-nnoremap <silent> $ g$
 
 " search for word under the cursor
 nnoremap <leader>ma "fyiw :/<c-r>f<cr>
@@ -267,7 +261,7 @@ nmap \s :set ts=2 sts=2 sw=2 et<cr>
 
 " Window movement shortcuts
 " move to the window in the direction shown, or create a new window
-function! WinMove(key)
+function! MovePane(key)
 		let t:curwin = winnr()
 		exec "wincmd ".a:key
 		if (t:curwin == winnr())
