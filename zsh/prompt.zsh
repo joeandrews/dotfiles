@@ -26,7 +26,7 @@ git_dirty() {
     command git rev-parse --is-inside-work-tree &>/dev/null || return
 
     # check if it's dirty
-    command git diff --quiet --ignore-submodules HEAD &>/dev/null;
+    command git diff --quiet HEAD &>/dev/null;
     if [[ $? -eq 1 ]]; then
         echo "%F{red}☢%f"
     else
