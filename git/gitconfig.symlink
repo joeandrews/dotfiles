@@ -1,9 +1,9 @@
 # gitconfig
 [user]
-    name = Greg Block
-    email = gblock0@gmail.com
+	name = Joe Andrews
+	email = joe@fuuzik.com
 [github]
-    user = gblock0
+    user = joeandrews
 [init]
     templatedir = ~/.dotfiles/git/templates
 [alias]

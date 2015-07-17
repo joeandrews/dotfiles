@@ -20,6 +20,10 @@ alias ll="ls -lFh ${colorflag}"
 alias lld="ls -l | grep ^d"
 alias rmf="rm -rf"
 
+#help 
+
+alias radish=“~/./.tmux/radish”
+
 # Helpers
 alias grep="grep --color=auto"
 alias df="df -h" # disk free, in Gigabytes, not bytes

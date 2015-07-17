@@ -10,8 +10,8 @@ COLOR_NONE="\x1B[0m"
 
 repo=$( git rev-parse --show-toplevel )
 
-for file in $( exec git diff-index --cached --name-only HEAD ); do
-    if [[ $file == *".js$"* ]]; then
+for file in $( exec git diff-index --name-only HEAD ); do
+    if [[ $file =~ \.e?js$ ]]; then
         status=$( exec git status --porcelain $file )
 
         if [[ $status != D* ]]; then

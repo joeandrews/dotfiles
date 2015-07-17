@@ -39,6 +39,22 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " search the nearest ancestor that contains .git, .hg, .svn
 let g:ctrlp_working_path_mode = 2
 
+""""""""""""""""""""
+"  Ag Silver Searcher
+""""""""""""""""""""
+if executable('ag')
+    " Use Ag over Grep
+    set grepprg=ag\ --nogroup
+    let g:grep_cmd_opts = '--line-numbers --noheading'
+
+    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+    "let g:ctrlp_user_command = 'ag %s -l -g ""'
+
+    " ag is fast enough that CtrlP doesn't need to cache
+    let g:ctrlp_use_caching = 0
+    ca Ag Ag!
+endif
+
 """""""""""""""""""""""""""
 " NerdCommenter
 """""""""""""""""""""""""""
@@ -79,16 +95,16 @@ let g:used_javascript_libs = 'angularjs,jquery,jasmine'
 """""""""""""""""""""""""""
 " Syntastic
 """""""""""""""""""""""""""
+
+let g:syntastic_javascript_checkers = ['jshint', 'jscs']
+
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_html_checkers = []
-let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 nnoremap <Leader>{ :lprev<CR>
 nnoremap <Leader>} :lnext<CR>
 
-" allow es5 mode when looking at TypeScript
-let g:syntastic_typescript_tsc_args = '--module amd --target ES5 --noImplicitAny'
-let g:syntastic_typescript_checkers = ['tslint']
-let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 
 
 """"""""""""""""""""

@@ -30,6 +30,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdcommenter'
 Plug 'moll/vim-node'
+Plug 'walm/jshint.vim'
 Plug 'lfilho/cosco.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'shinokada/autoswap_mac'
@@ -42,7 +43,9 @@ Plug 'mileszs/ack.vim'
 
 " Js plugins...
 "Plug 'othree/yajs.vim'
-Plug 'Chiel92/vim-autoformat'
+
+Plug 'maksimr/vim-jsbeautify'
+Plugin 'einars/js-beautify'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'rschmukler/pangloss-vim-indent'
